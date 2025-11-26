@@ -26,19 +26,19 @@
       "outArguments": [
         { "precios": "" }
       ],
-      "url": "https://custom-activity-ejemplo-1.onrender.com/execute"
+      "url": "https://custom-activity-ejemplo-2.onrender.com/execute"
     },
     "save": {
-      "url": "https://custom-activity-ejemplo-1.onrender.com/save"
+      "url": "https://custom-activity-ejemplo-2.onrender.com/save"
     },
     "publish": {
-      "url": "https://custom-activity-ejemplo-1.onrender.com/publish"
+      "url": "https://custom-activity-ejemplo-2.onrender.com/publish"
     },
     "validate": {
-      "url": "https://custom-activity-ejemplo-1.onrender.com/validate"
+      "url": "https://custom-activity-ejemplo-2.onrender.com/validate"
     },
     "schema": {
-      "url": "https://custom-activity-ejemplo-1.onrender.com/schema"
+      "url": "https://custom-activity-ejemplo-2.onrender.com/schema"
     }
   }
 }
