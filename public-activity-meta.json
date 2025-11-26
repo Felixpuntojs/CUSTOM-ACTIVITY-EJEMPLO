@@ -1,0 +1,44 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "https://yourserver.com/icon.png",
+    "category": "REST",
+    "isConfigured": true,
+    "configurationArguments": {
+      "applicationExtension": {
+        "endpoint": "https://tu-app.com" // Cambia esto por tu URL
+      }
+    }
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "ConsultaPrecioProducto",
+      "description": "Obtiene precio actual de productos vía API externa",
+      "stepDescription": "Obtiene precios externo"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [
+        { "productoId": "" }
+      ],
+      "outArguments": [
+        { "precios": "" }
+      ],
+      "url": "https://tu-app.com/execute"
+    },
+    "save": {
+      "url": "https://tu-app.com/save"
+    },
+    "publish": {
+      "url": "https://tu-app.com/publish"
+    },
+    "validate": {
+      "url": "https://tu-app.com/validate"
+    },
+    "schema": {
+      "url": "https://tu-app.com/schema"
+    }
+  }
+}
