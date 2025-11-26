@@ -1,0 +1,12 @@
+{
+  "name": "sfmc-custom-activity-precios",
+  "version": "1.0.0",
+  "main": "customActivity.js",
+  "scripts": {
+    "start": "node customActivity.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.5"
+  }
+}
