@@ -72,5 +72,24 @@ app.post('/schema', (req, res) => {
   });
 });
 
+const fs = require('fs');
+const path = require('path');
+
+// Endpoint para exponer el metadata como config.json:
+app.get('/config.json', (req, res) => {
+  const metaPath = path.join(__dirname, 'public-activity-meta.json');
+  fs.readFile(metaPath, 'utf8', (err, data) => {
+    if (err) {
+      res.status(500).json({ error: 'No se pudo leer el archivo de metadata.' });
+      return;
+    }
+    try {
+      const metaJson = JSON.parse(data);
+      res.json(metaJson);
+    } catch (parseError) {
+      res.status(500).json({ error: 'La metadata no tiene formato JSON válido.' });
+    }
+  });
+});
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Custom Activity API en puerto ${PORT}`));
