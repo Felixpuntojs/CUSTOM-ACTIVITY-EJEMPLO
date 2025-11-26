@@ -27,18 +27,36 @@
         { "precios": "" }
       ],
       "url": "https://custom-activity-ejemplo-2.onrender.com/execute"
-    },
+    }
+  }
+  "configurationArguments": {
     "save": {
-      "url": "https://custom-activity-ejemplo-2.onrender.com/save"
+      "url": "https://example.com/save",
+      "securityOptions": {
+        "securityType": "securityContext",
+        "securityContextKey": "EXTERNAL_KEY"
+      }
     },
     "publish": {
-      "url": "https://custom-activity-ejemplo-2.onrender.com/publish"
+      "url": "https://custom-activity-ejemplo-2.onrender.com/publish",
+      "securityOptions": {
+        "securityType": "securityContext",
+        "securityContextKey": "EXTERNAL_KEY"
+      }
     },
     "validate": {
-      "url": "https://custom-activity-ejemplo-2.onrender.com/validate"
+      "url": "https://custom-activity-ejemplo-2.onrender.com/validate",
+      "securityOptions": {
+        "securityType": "securityContext",
+        "securityContextKey": "EXTERNAL_KEY"
+      }
     },
-    "schema": {
-      "url": "https://custom-activity-ejemplo-2.onrender.com/schema"
+    "stop": {
+      "url": "https://custom-activity-ejemplo-2.onrender.com/stop",
+      "securityOptions": {
+        "securityType": "securityContext",
+        "securityContextKey": "EXTERNAL_KEY"
+      }
     }
   }
 }
