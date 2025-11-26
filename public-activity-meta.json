@@ -58,7 +58,7 @@
         "securityContextKey": "EXTERNAL_KEY"
       }
     }
-  }
+  },
     "userInterfaces": {
     "configModal": {
       "url": "https://custom-activity-ejemplo-2.onrender.com/public/configModal.html",
