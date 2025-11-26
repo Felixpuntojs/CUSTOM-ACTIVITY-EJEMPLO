@@ -28,7 +28,7 @@
       ],
       "url": "https://custom-activity-ejemplo-2.onrender.com/execute"
     }
-  }
+  },
   "configurationArguments": {
     "save": {
       "url": "https://example.com/save",
