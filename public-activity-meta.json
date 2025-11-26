@@ -59,10 +59,10 @@
       }
     }
   }
-  "userInterfaces": {
-  "configModal": {
-    "url": "https://custom-activity-ejemplo-2.onrender.com/public/configModal.html",
-    "fullscreen": false
+    "userInterfaces": {
+    "configModal": {
+      "url": "https://custom-activity-ejemplo-2.onrender.com/public/configModal.html",
+      "fullscreen": false
+    }
   }
-}
 }
