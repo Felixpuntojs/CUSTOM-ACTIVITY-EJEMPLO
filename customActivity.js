@@ -1,6 +1,8 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
+const fs = require('fs');
+const path = require('path');
 app.use(express.json());
 
 // Soporte CORS básico
@@ -8,6 +10,18 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
+});
+
+// ENDPOINT: sirve el archivo de configuración en /
+app.get('/', (req, res) => {
+  // Lee y envía el JSON de configuración para la custom activity
+  const configPath = path.join(__dirname, 'public-activity-meta.json');
+  try {
+    const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    res.json(config);
+  } catch (e) {
+    res.status(500).json({ error: "Cannot load configuration file." });
+  }
 });
 
 // Endpoints requeridos por SFMC
