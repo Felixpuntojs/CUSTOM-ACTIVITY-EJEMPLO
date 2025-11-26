@@ -6,7 +6,7 @@
     "isConfigured": true,
     "configurationArguments": {
       "applicationExtension": {
-        "endpoint": "https://tu-app.com" // Cambia esto por tu URL
+        "endpoint": "https://api-de-precios2.onrender.com"
       }
     }
   },
@@ -26,19 +26,19 @@
       "outArguments": [
         { "precios": "" }
       ],
-      "url": "https://tu-app.com/execute"
+      "url": "https://custom-activity-ejemplo-1.onrender.com/execute"
     },
     "save": {
-      "url": "https://tu-app.com/save"
+      "url": "https://custom-activity-ejemplo-1.onrender.com/save"
     },
     "publish": {
-      "url": "https://tu-app.com/publish"
+      "url": "https://custom-activity-ejemplo-1.onrender.com/publish"
     },
     "validate": {
-      "url": "https://tu-app.com/validate"
+      "url": "https://custom-activity-ejemplo-1.onrender.com/validate"
     },
     "schema": {
-      "url": "https://tu-app.com/schema"
+      "url": "https://custom-activity-ejemplo-1.onrender.com/schema"
     }
   }
 }
